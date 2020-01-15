@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>EtherChange</title>
+	<link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	<style>
+		body, html {		
+			height: 100%;
+			background: linear-gradient(to bottom, #f6f2f2 15%, #D3D3D3, #C9C9C9);
+		}
+	</style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <nav> 
+		<img src="logo.png" alt="Logo EtherChange" id="img-logo"> 
+		<ul id="menu">
+			<li><a href="./index.html" class="item-menu"> Home </a> </li>
+			<li><a href="./definicao.html" class="item-menu "> Definições </a> </li>
+			<li><a href="./comprar.html" class="item-menu"> Como Comprar </a> </li>
+			<li id="comprar"><a href="./compre-aqui.html" > Compre Aqui </a> </li>
+			<li id="login"><a href="#"> Login </a> </li>
+		</ul>
+    </nav>
+ 
+    <form>
+      <div id="valor-eth">
+        1 ETH = 
+      </div>
+
+      <div id="valores">
+        <label for="valores" class="desc"> Valor </label> 
+
+        <input type="radio" Name="valor" ID="v1" Value="0.25">
+        <label class="select" for="v1">0.25 ETH  </label>
+        
+        <input type="radio" Name="valor" ID="v2" Value="0.5">
+        <label class="select" for="v2">0.5 ETH</label>
+        
+        <input type="radio" Name="valor" ID="v3" Value="1">
+        <label class="select" for="v3">1 ETH</label>
+      </div>
+
+      <div class="taxa-subtotal">
+        <p class="desc">Subtotal </p> 
+        <p class="taxa">R$0,00 </p> 
+      </div>
+
+      <div class="taxa-subtotal">
+        <p class="desc">Taxa </p> 
+        <p class="taxa">R$50,00 </p> 
+      </div>
+
+      <div id="linha"></div>
+
+      <div class="taxa-subtotal total">
+        <p class="desc"><em>Total </p> 
+        <p class="taxa">R$50,00 </em></p> 
+      </div>
+
+      <input type="button" class="item-form" value="Comprar" id="send" onClick="parent.location='compre-aqui-dados.html'">
+    </form>       
+  </div>
+  </body>
+</html>
