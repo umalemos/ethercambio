@@ -17,15 +17,21 @@
   <body>
     <script src="script.js"></script>
     <nav> 
-		<img src="logo.png" alt="Logo EtherChange" id="img-logo"> 
-		<ul id="menu">
-			<li><a href="./index.html" class="item-menu"> Home </a> </li>
-			<li><a href="./definicao.html" class="item-menu "> Definições </a> </li>
-			<li><a href="./comprar.html" class="item-menu"> Como Comprar </a> </li>
-			<li id="comprar"><a href="./compre-aqui.html" > Compre Aqui </a> </li>
-			<li id="login"><a href="./login.html"> Login </a> </li>
-		</ul>
-    </nav>
+      <img src="logo.png" alt="Logo EtherChange" id="img-logo">
+  
+      <a href="#"><img src="./menu.svg" class="hide-desktop" alt="menu" id="menu" width="25"></a>
+  
+      <ul id="menu" class="show-desktop hide-mobile" id="nav">
+  
+        <li id="sair" class="fecha-btn hide-desktop"> <img src="./close.svg" alt="fechar menu" width="20"></li>
+  
+        <li><a href="./index.html" class="item-menu"> Home </a> </li>
+        <li><a href="./definicao.html" class="item-menu "> Definições </a> </li>
+        <li><a href="./comprar.html" class="item-menu"> Como Comprar </a> </li>
+        <li id="comprar"><a href="./compre-aqui.html" > Compre Aqui </a> </li>
+        <li id="login"><a href="./login.html"> Login </a> </li>
+      </ul>
+      </nav>
     
       <form id="bloco-form">
         <div id="valor-eth">
