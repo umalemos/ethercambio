@@ -360,7 +360,7 @@ nav {
 	margin: 0 0 40px 10%;
 	position: relative;
 	width: 80%;
-	padding-top: 100px;
+	padding-top: 5%;
 	font-family: 'Share Tech', sans-serif;
 	font-size: 52px;
 	font-weight: normal;	
@@ -369,6 +369,7 @@ nav {
 
 #row2 {
 	margin: 0 0 25px 0;
+	padding-bottom: 2%;
 }
 
 .column2 {
