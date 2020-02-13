@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>EtherChange</title>
+	<link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+	<style>
+		body, html {		
+			height: 100%;
+			background: linear-gradient(to bottom, #f6f2f2 15%, #D3D3D3, #C9C9C9);
+		}
+	</style>
+  </head>
+  <body>
+
+<nav id="menu-conta"> 
+    <img src="logo.png" alt="Logo EtherChange" id="img-logo">
+    <ul id="lista-menu">      
+        <li>Olá, Usuário! </li>
+        <li> <img src="notificacao2.svg" width="24px"> </li>
+        <li id="profile"><img src="perfil.svg" width="30px" > <img src="seta.svg" width="13px">  </li>            
+    </ul>
+</nav>
+
+<div id="menu-vertical">
+    <ul>
+        <li> <a href="#"> <img src="extrato2.svg" width="45px" alt="ícone conta"> <br>Extrato </a> </li>
+        <li> <a href="#"> <img src="pedido.svg" width="45px" alt="ícone caixa com confirmado ao lado"> <br> Pedidos </a>  </li>
+        <li> <a href="#"> <img src="limite.svg" width="45px" alt="ícone nota de dinheiro com regulador embaixo"> <br> Limite </a> </li>
+        <li> <a href="#"> <img src="wallet.svg" width="45px" alt="ícone carteira"> <br> Wallet</a> </li>
+    </ul>
+</div>
+
+    <ul id="notificacao">
+        <li> <a href="#">  Conta</li> </a>
+        <li> <a href="#">Configurações</a> </li> 
+        <li><a href="#">Sair</a></li>
+    </ul>
+
+    <div id="cont-extrato">
+        <h1> Extrato </h1>
+        <div id="periodo">
+            <p> Selecione o período </p>
+            <button> 7 dias </button>
+            <button> 15 dias </button>
+            <button> 30 dias </button>
+            <input type="date">
+        </div>   
+        <table id="extrato">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Valor em R$</th> 
+                    <th>Valor em ETH</th>
+                    <th>Cotação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>27/01/2020</td>
+                    <td>2.570,45</td>
+                    <td>0.5</td>
+                    <td>R$5.140,9‬0/ETH</td>
+                </tr>
+                <tr>
+                    <td>27/01/2020</td>
+                    <td>2.570,45</td>
+                    <td>0.5</td>
+                    <td>R$5.140,9‬0/ETH</td>
+                </tr>
+                <tr>
+                    <td>27/01/2020</td>
+                    <td>2.570,45</td>
+                    <td>0.5</td>
+                    <td>R$5.140,9‬0/ETH</td>
+                </tr>
+                <tr>
+                    <td>27/01/2020</td>
+                    <td>2.570,45</td>
+                    <td>0.5</td>
+                    <td>R$5.140,9‬0/ETH</td>
+                </tr>
+                <tr>
+                    <td>27/01/2020</td>
+                    <td>2.570,45</td>
+                    <td>0.5</td>
+                    <td>R$5.140,9‬0/ETH</td>
+                </tr>
+                <tr>
+                    <td>27/01/2020</td>
+                    <td>2.570,45</td>
+                    <td>0.5</td>
+                    <td>R$5.140,9‬0/ETH</td>
+                </tr>
+                <tr>
+                    <td>27/01/2020</td>
+                    <td>2.570,45</td>
+                    <td>0.5</td>
+                    <td>R$5.140,9‬0/ETH</td>
+                </tr>
+                <tr>
+                    <td>27/01/2020</td>
+                    <td>2.570,45</td>
+                    <td>0.5</td>
+                    <td>R$5.140,9‬0/ETH</td>
+                </tr>
+                <tr>
+                    <td>27/01/2020</td>
+                    <td>2.570,45</td>
+                    <td>0.5</td>
+                    <td>R$5.140,9‬0/ETH</td>
+                </tr>
+                <tr>
+                    <td>27/01/2020</td>
+                    <td>2.570,45</td>
+                    <td>0.5</td>
+                    <td>R$5.140,9‬0/ETH</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+
+<script>
+    $(document).ready(function(){
+      $("#profile").click(function(){
+        $("#notificacao").toggle("fast", "linear");
+      });
+    });
+</script>
+
+</body>
+</html>

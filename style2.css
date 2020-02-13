@@ -1,0 +1,179 @@
+body, html {
+	margin: 0;
+	width: 100%;
+	font-family:'DM Sans', sans-serif;
+	color: #232323;
+}
+
+em {
+	font-weight: bold;
+	font-style: normal;
+}
+
+#menu-conta {
+	color: white;
+	background-color: #393939;
+	width: 100%;
+	height: 70px;
+	display: inline-flex;
+	top: 0;
+	position: relative;
+}
+
+#lista-menu {
+	list-style-type: none;
+	margin: 0;
+	padding-top: 22px;
+	position: absolute;
+	right: 20px;
+}
+
+#lista-menu li {
+	display: inline;
+	margin-right: 20px;
+}
+
+#menu-vertical {
+	width: 140px;
+	background-color: ivory;
+	height: 88.5%;
+	margin: 0;
+	position: absolute;
+	top: 70px;
+	text-align: center;
+}
+
+#menu-vertical ul {
+	padding: 10px 0;
+}
+
+#menu-vertical ul li {
+	list-style-type: none;
+	margin-top: 30px;
+	padding-bottom: 15px;
+}
+
+#menu-vertical ul img{
+	margin-bottom: 7px;;
+}
+
+#menu-vertical li:hover {
+	transform: scale(1.05);
+	transition: 0s;	
+	font-weight: bold;
+}
+#menu-vertical ul li a {
+	color: #232323;
+	text-decoration: none;
+}
+
+#notificacao {
+	position: absolute;
+	right: 30px;
+	background-color: ivory;
+	margin: 0;
+	list-style-type: none;
+	padding: 30px 30px 0 30px ;
+	display: none;
+}	
+
+#notificacao li {
+	margin-bottom: 20px;	
+}
+
+#notificacao li:hover {
+	font-weight: bold;
+}
+
+#notificacao li a {
+	color: #232323;
+	text-decoration: none;
+}
+
+/*EXTRATO*/
+
+#cont-extrato {
+    position: absolute;
+    width: 70%;
+    left: 22%;
+    top: 20%;
+    height: 80%;
+}
+
+#periodo {
+    vertical-align: bottom;
+}
+#periodo p {
+    display: inline;
+    margin-right: 25px;
+}
+
+#periodo button, #periodo input {
+    background-color:#eee ;
+    color:#232323 ;
+    border: none;
+    padding: 10px 15px;
+    box-shadow: #979696;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 11px;
+}
+
+#periodo input {    
+    padding: 8px 12px;
+}
+
+#extrato {
+    margin-top: 50px;
+}
+
+thead, tbody{
+  display: block;  
+}
+
+tbody{
+  overflow-y: scroll;
+  height: 200px;
+}
+
+table#extrato, th, td {
+  border-bottom: 1px solid #979696;
+  border-collapse: collapse;
+}
+
+table#extrato td {
+  padding: 10px 20px;
+  text-align: center;
+  width: 100px;
+}
+
+table#extrato th {
+  background-color: #cacaca;
+  color: #232323;
+  font-weight: normal;
+  padding: 14px 20px;
+  text-align: center;
+  width: 105px;
+}
+
+table#extrato tr:nth-child(even) {
+  background-color: #eee;
+}
+table#extrato tr:nth-child(odd) {
+ background-color: rgb(245, 245, 245);
+}
+
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #979696; 
+  border-radius: 7px;
+}
+::-webkit-scrollbar-track{
+    background-color: #eee;
+}
+@media only screen and (max-width: 730px) {
+}

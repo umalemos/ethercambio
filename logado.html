@@ -8,7 +8,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
 	<style>
-		body, html {	
+		body, html {		
+			height: 100%;
 			background: linear-gradient(to bottom, #f6f2f2 15%, #D3D3D3, #C9C9C9);
 		}
 	</style>
@@ -27,43 +28,26 @@
 			<li id="comprar"><a href="./compre-aqui.html" > Compre Aqui </a> </li>	<li id="login"><a href="./login.html"> Login </a> </li>
 		</ul>
 	</nav>
-	<h1 id="titulo2"> COMO COMPRAR?</h1> <br>
-		<div id="row2">		
-			<div class="column2">
-				<div class="card2">
-					<img src="icon-4.svg" id="icon-4" alt="mãos dadas em frente a um contrato assinado"> 
-					<p> 1. Crie sua carteira. </p>
-				</div>
-			</div>
-			<div class="column2">
-				<div class="card2">
-					<img src="icon-5.svg" id="icon-5" alt="mãos dadas em frente a um contrato assinada">
-					<p>2. Faça seu cadastro. </p>
-				</div>
-			</div>
-			
-			<div class="column2">
-				<div class="card2">
-					<img src="icon-6.svg" id="icon-6" alt="mãos dadas em frente a um contrato assinada"> 
-					<p> 3. Faça o Upload de documentos. </p>
-				</div>
-			</div>
-			
-			<div class="column2">
-				<div class="card2">
-					<img src="icon-7.svg" id="icon-7" alt="mãos dadas em frente a um contrato assinada"> 
-					<p> 4. Gere o boleto, efetue o pagamento e aguarde a compensação.  </p>
-				</div>
-			</div>
 
-			<div class="column2">
-				<div class="card2">
-					<img src="icon-8.svg" id="icon-8" alt="mãos dadas em frente a um contrato assinada"> 
-					<p> 5. Consulte seu saldo. </p>
-				</div>			
-			</div>
-	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+	<h1 id="cadastro"> Pagamento </h1>
+	<p> Escolha a forma de pagamento desejada </p>
+	<form id="bloco-form">
+		<div id="valores">
+			<input type="radio" Name="boleto" id="bol" Value="boleto">
+			<label class="select" for="bol"> Boleto Bancário </label>
+			
+			<input type="radio" Name="ted" id="ted" Value="ted">
+			<label class="select" for="ted"> Transferência (TED) </label>
+		</div>
+	</form>
+
+	<div method="post" id="txt-boleto">
+		<p> Para o pagamentos com boleto a transação demora até 3 dias</p>
+		<p> <em> O boleto será encaminhado para o email de cadastro. </em> </p>
+		<input type="submit" value="Finalizar Compra" />
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
 
 <script>
     $(document).ready(function(){
@@ -88,5 +72,5 @@
       });
     });
 </script>
-  </body>
+</body>
 </html>

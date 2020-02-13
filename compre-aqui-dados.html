@@ -15,22 +15,19 @@
 	</style>
   </head>
   <body>
-    <nav> 
-    <img src="logo.png" alt="Logo EtherChange" id="img-logo">
-
-    <a href="#"><img src="./menu.svg" class="hide-desktop" alt="menu" id="menu" width="25"></a>
-
-		<ul id="menu" class="show-desktop hide-mobile" id="nav">
-
-      <li id="sair" class="fecha-btn hide-desktop"> <img src="./close.svg" alt="fechar menu" width="20"></li>
-
-			<li><a href="./index.html" class="item-menu"> Home </a> </li>
-			<li><a href="./definicao.html" class="item-menu "> Definições </a> </li>
-			<li><a href="./comprar.html" class="item-menu"> Como Comprar </a> </li>
-			<li id="comprar"><a href="./compre-aqui.html" > Compre Aqui </a> </li>
-			<li id="login"><a href="./login.html"> Login </a> </li>
-		</ul>
-    </nav>
+      <nav> 
+        <img src="logo.png" alt="Logo EtherChange" id="img-logo">	
+        <img src="./menu.svg" class="hide-desktop" alt="menu" id="ham-menu" width="25">
+        <img src="./close.svg" id="sair" class="hide-desktop" alt="fechar menu" width="20">	
+        <ul id="menu" class="show-desktop hide-mobile">	
+            
+            
+          <li><a href="./index.html" class="item-menu"> Home </a> </li>
+          <li><a href="./definicao.html" class="item-menu "> Definições </a> </li>
+          <li><a href="./comprar.html" class="item-menu"> Como Comprar </a> </li>
+          <li id="comprar"><a href="./compre-aqui.html" > Compre Aqui </a> </li>	<li id="login"><a href="./login.html"> Login </a> </li>
+        </ul>
+      </nav>
     
     <h1 id="cadastro"> Cadastre-se</h1>
     <p id="logar"> Já possui cadastro? <a href="./login.html"> Entrar</a> </p>
@@ -59,22 +56,32 @@
             <label for="upload" class="desc"> Identificação da OAB </label>
             <input type="file" name="myFile" multiple id="upload" aria-label="upload" class="item-form" required> 
             <br>      
-            <input type="submit" value="Enviar" />
+            <input type="submit" value="Cadastrar" />
         </form>
 
-<script>    
-    var menu = document.getElementById('menu');
-    var nav = document.getElementById('nav');
-    var sair = document.getElementById('sair');
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
 
-    menu.addEventListener('click', function(e) {
-        nav.classList.toggle('hide-mobile');
-        e.preventDefault();
-    });
-      
-    sair.addEventListener('click', function(e) {
-        nav.classList.add('hide-mobile');
-        e.preventDefault();
+<script>
+    $(document).ready(function(){
+      $("#ham-menu").click(function(){
+        $("#menu").show("fast", "linear");
+      });
+	  $("#ham-menu").click(function(){
+        $("#sair").show(400);
+      });
+	  $("#ham-menu").click(function(){
+        $("#ham-menu").hide();
+      });
+	  
+	  $("#sair").click(function(){
+        $("#menu").hide(400);
+      });
+	  $("#sair").click(function(){
+        $("#ham-menu").show();
+      });
+	  $("#sair").click(function(){
+        $("#sair").hide("fast", "linear");
+      });
     });
 </script>
 

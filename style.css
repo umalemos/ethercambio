@@ -16,7 +16,7 @@ nav {
 	height: 70px;
 	display: inline-flex;
 	top: 0;
-	position: fixed;
+	position: relative;
 	z-index: 99;
 }
 
@@ -32,6 +32,16 @@ nav {
 	right: 20px;
 }
 
+#ham-menu, #sair {
+	right: 25px;
+    top: 22px;
+	position: absolute;
+	cursor: pointer;
+}
+
+#sair {
+	display: none;
+}
 #menu li a {
   	vertical-align: middle;
 	text-decoration: none;
@@ -70,23 +80,93 @@ nav {
 
 #desc {
 	position: absolute; 
-	left: 30px;
-	top: 120px;
-	width: 250px; 
-	font-size: 17px;
-	text-align: center;
+	left: 5%;
+	top: 200px;
+	width: 45%; 	
+	text-align: left;	
+}
+
+#landinpage-cta {
+	font-size: 35px;
+	font-family: 'Share Tech', sans-serif;
+	margin-bottom: 10px;
+}
+
+#desc a {
+	color: white;
+	background-color: #1f1f1f;
+	border-radius: 3px;
+    padding: 16px 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-decoration: none;
+	font-size: 19px;
+}
+
+#desc a:hover {
+	padding: 18px 80px;
+	font-size: 21px;
+}
+
+#subtitulo {
+	font-family:'DM Sans', sans-serif;
+	font-size: 22px;
+	margin-top: 0;
+	margin-bottom: 40px;
 }
 
 #cotacao {
 	position: absolute; 
-	bottom: 50px;
-	left: 30px;
-	font-style: italic;
-	height: 150px;
-	width: 270px;
-	background-color: grey;
+	right: 5%;
+	height: 50%;
+	width: 40%;
+	top: 180px;
+	text-align: center;
 }
 
+
+#cot-titulo {
+	font-size: 18px;
+	margin: 20px;
+	font-style: italic;
+}
+
+#value-eth {
+	font-size: 60px;
+	margin: 0;
+	text-shadow:2px 2px 7px #333333;
+	margin-bottom: 20px;
+}
+
+.diferenciais {
+	width: 63%;
+	margin: auto;
+	margin-top: 10px;
+	background-color: rgba(145, 145, 145, 0.836);
+	place-content: center;
+	line-height: 100%;
+	border-radius: 3px;
+}
+
+.diferenciais p {	
+	padding: 10px;
+	margin: inherit;
+	font-size: 14px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.diferenciais img {
+	vertical-align: middle;
+	margin: auto;
+	margin-right: 5px;;
+}
+
+#refresh {
+	background-color: inherit;
+	border: inherit;
+	margin-left: 10px;
+	width:35px;
+}
 /* DEFINIÇÕES */
 
 .def {
@@ -220,10 +300,22 @@ nav {
 
 
 @media only screen and (max-width: 730px) {
+	#menu { background-color: #393939; right:0; top: 70px; padding: 0 30px; text-align: center; position: fixed; height: 100%;}
+	#menu li {display: block; margin: 30px;}
+	#desc {width: 90%; position: relative; top: 10px;}
+	#desc a {padding: 15px 40% 15px 40%;}
+	#desc a:hover {padding: 15px 40% 15px 40%;}
+	#landingpage-cta {font-size: 39px;}
+	#subtitulo { font-size: 20px;}
+	#cotacao {width: 90%; position: relative; margin: auto; height: fit-content; right: inherit; top: 65px}
+	#refresh {width: 40px; margin-left: 0;}
+	#cot-titulo {margin:5px; }
+	.diferenciais {width: 90%;}
+	.diferenciais p {font-size: 17px;}
 	.def {width: 90%; font-size: 16px; margin-top: 0; padding-top: 20px;}
 	.esq {left: 5%;}
 	.dir {right: 5%;}
-	#img1 {width: 50%; margin-left: 25%; position: relative; right: inherit; margin-top:100px;}
+	#img1 {width: 50%; margin-left: 25%; position: relative; right: inherit; margin-top:50px;}
 	#img2 {width: 40%; position: relative;  margin: 70px auto auto 20%;}
 	#metamask {width: 35%; position: relative; right: inherit; margin: 20px 0 20px 30%;}
 	.def h1 {font-size: 40px;}
@@ -332,7 +424,7 @@ nav {
 	#icon-4, #icon-5, #icon-7{width: 30%;}
 	#icon-6, #icon-8 {width: 35%;}
 	#row2 {text-align: center;}
-	#titulo2 {margin-top: 0;font-size: 40px; width:90%;}
+	#titulo2 {margin-top: 0;font-size: 40px; width:90%; padding-top: 0;}
 }
 
 @media only screen and (min-width: 730px) and (max-width:1103px) {
@@ -465,3 +557,10 @@ input[type=submit]:hover, input[type=button]:hover {
 }
 
 .login {width: 100px;;}
+
+#txt-boleto {
+	display: block;
+	position: absolute;
+	top: 200px;
+}
+

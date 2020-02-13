@@ -6,7 +6,7 @@
     <title>EtherChange</title>
 	<link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">	
 	<link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
 	<style>
 		body, html {		
 			height: 100%;
@@ -14,26 +14,23 @@
 		}
 	</style>
   </head>
+
   <body>
-    <script src="script.js"></script>
     <nav> 
-      <img src="logo.png" alt="Logo EtherChange" id="img-logo">
-  
-      <a href="#"><img src="./menu.svg" class="hide-desktop" alt="menu" id="menu" width="25"></a>
-  
-      <ul id="menu" class="show-desktop hide-mobile" id="nav">
-  
-        <li id="sair" class="fecha-btn hide-desktop"> <img src="./close.svg" alt="fechar menu" width="20"></li>
-  
+      <img src="logo.png" alt="Logo EtherChange" id="img-logo">	
+      <img src="./menu.svg" class="hide-desktop" alt="menu" id="ham-menu" width="25">
+      <img src="./close.svg" id="sair" class="hide-desktop" alt="fechar menu" width="20">	
+      <ul id="menu" class="show-desktop hide-mobile">	
+          
+          
         <li><a href="./index.html" class="item-menu"> Home </a> </li>
         <li><a href="./definicao.html" class="item-menu "> Definições </a> </li>
         <li><a href="./comprar.html" class="item-menu"> Como Comprar </a> </li>
-        <li id="comprar"><a href="./compre-aqui.html" > Compre Aqui </a> </li>
-        <li id="login"><a href="./login.html"> Login </a> </li>
+        <li id="comprar"><a href="./compre-aqui.html" > Compre Aqui </a> </li>	<li id="login"><a href="./login.html"> Login </a> </li>
       </ul>
-      </nav>
+    </nav>
     
-      <form id="bloco-form">
+      <form action="" id="bloco-form">
         <div id="valor-eth">
           1 ETH = 
         </div>
@@ -41,16 +38,16 @@
         <div id="valores">
           <label for="valores" class="desc"> Valor </label> 
 
-          <input type="radio" Name="valor" id="v1" Value="0.25">
+          <input type="radio" Name="valor" id="v1" Value="0.25" onclick="getvalortotal()">
           <label class="select" for="v1">0.25 ETH  </label>
           
-          <input type="radio" Name="valor" id="v2" Value="0.5">
+          <input type="radio" Name="valor" id="v2" Value="0.5" onclick="getvalortotal()">
           <label class="select" for="v2">0.5 ETH</label>
 
-          <input type="radio" Name="valor" id="v3" Value="0.75">
+          <input type="radio" Name="valor" id="v3" Value="0.75" onclick="getvalortotal()">
           <label class="select" for="v3">0.75 ETH</label>
           
-          <input type="radio" Name="valor" id="v4" Value="1">
+          <input type="radio" Name="valor" id="v4" Value="1" onclick="getvalortotal()">
           <label class="select" for="v4">1 ETH</label>
         </div>
 
@@ -66,13 +63,74 @@
 
         <div id="linha"></div>
 
-        <div class="taxa-subtotal total">
+        <div class="taxa-subtotal total" id="totalPrice">
           <p class="desc"><em>Total </p> 
-          <p class="taxa">R$50,00 </em></p> 
+          <p class="taxa" > </em></p> 
         </div>
 
         <input type="button" class="item-form" value="Comprar" id="send" onClick="parent.location='compre-aqui-dados.html'">
       </form>      
 
-  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+
+<script>
+    $(document).ready(function(){
+      $("#ham-menu").click(function(){
+        $("#menu").show("fast", "linear");
+      });
+	  $("#ham-menu").click(function(){
+        $("#sair").show(400);
+      });
+	  $("#ham-menu").click(function(){
+        $("#ham-menu").hide();
+      });
+	  
+	  $("#sair").click(function(){
+        $("#menu").hide(400);
+      });
+	  $("#sair").click(function(){
+        $("#ham-menu").show();
+      });
+	  $("#sair").click(function(){
+        $("#sair").hide("fast", "linear");
+      });
+    });
+</script>
+   
+  </body> 
+
+  
+     <script>
+       var theForm = document.forms["bloco-form"];
+
+       var preços = new Array();
+          preços["0.25"]=0,25;
+          preços["0.5"]=0,5;
+          preços["0.75"]=0,75;
+          preços["1"]=1,00;
+
+          function getvalortotal()
+{
+    var valores=0;
+    var theForm = document.forms["bloco-form"];
+    var valor = theForm.elements["valor"];
+    for(var i = 0; i < valor.length; i++)
+    {
+        if(valor[i].checked)
+        {
+            valores = preços[valor[i].value];
+            break;
+        }
+    }
+    return valores;
+}
+
+    function getTotal() {
+    var preçofinal = getvalortotal();
+    document.getElementById('totalPrice').innerHTML =
+                                                  +preçofinal;
+ 
+}
+
+    </script>
 </html>
