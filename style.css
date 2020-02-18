@@ -518,8 +518,8 @@ input[type=submit]:hover, input[type=button]:hover {
 	#desc {width: 90%; position: relative; top: 10px; margin-left: 9%;}
 	#desc a {padding: 15px 40% 15px 40%;}
 	#desc a:hover {padding: 15px 40% 15px 40%;}
-	#desc p {margin-bottom: 210px; color: inherit; font-size: 26px;	text-align: center;}
-	#cotacao { height: fit-content; height: fit-content; left: 12%; bottom: 85px;}
+	#desc p {color: inherit; font-size: 26px;	text-align: center;}
+	#cotacao {position: relative; width: 80%;margin-left: 7%; margin-top: 90px; left: inherit;}
 	#refresh {width: 40px; margin-left: 0;}
 	#cot-titulo {margin:5px;}
 	.def {width: 90%; font-size: 16px; margin-top: 0; padding-top: 20px;}
