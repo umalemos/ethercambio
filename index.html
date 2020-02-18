@@ -10,7 +10,7 @@
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<style>
 		body,html {		
-			background: linear-gradient(to bottom, #f6f2f2 15%, #D3D3D3, #C9C9C9);
+			background-color:#C9C9C9;
 			height: 100%;
 		}
 	</style>
@@ -22,29 +22,176 @@
 		<img src="./close.svg" id="sair" class="hide-desktop" alt="fechar menu" width="20">	
 		<ul id="menu" class="show-desktop hide-mobile">		  	
 			<li><a href="./index.html" class="item-menu"> Home </a> </li>
-			<li><a href="./definicao.html" class="item-menu "> Definições </a> </li>
-			<li><a href="./comprar.html" class="item-menu"> Como Comprar </a> </li>
-			<li id="comprar"><a href="./compre-aqui.html" > Compre Aqui </a> </li>	<li id="login"><a href="./login.html"> Login </a> </li>
+			<li><a href="#descricao" class="item-menu "> Definições </a> </li>
+			<li><a href="#titulo2" class="item-menu"> Como Comprar </a> </li>
+			<li id="comprar"><a href="#compre-aqui" > Compre Aqui </a> </li>	
+			<li id="login"><a href="#cadastro"> Login </a> </li>
 		</ul>
 	</nav>
 	
+	<div id="background"> </div>
 	<div id="desc">
-		<p id="landinpage-cta"> <em>TRANSFORME A FORMA COMO REALIZA SEUS CONTRATOS. </em> </p>
-		<p id="subtitulo"> Compre ETHER com facilidade e agilidade </p>
-		<a href="./compre-aqui.html"> Comprar </a>
+		<p>Compre ETHER para executar seus Smart Contracts ou realizar pagamentos </p>
+		<a href="#compre-aqui"> Comprar </a>
 	</div>
 	
 	<div id="cotacao">
 		<p id="cot-titulo"> 01 ETH equivale à    </p>
 		<p id="value-eth"> R$945,25 <button id="refresh" onClick="window.location.reload();"> <img src="refresh.svg" alt="recarregar"> </button></p>
-		<div class="diferenciais">
-			<p> <img src="check.svg" alt="ícone check" width="22"> <em> TAXA FIXA </em></p>
+	</div>
+
+
+<div id="descricao">
+	<img src="img1.png" alt="Ethereum Homestead Release Blockchain app platform" id="img1">		
+	<div class="def esq">
+		<h1> O QUE É ETHEREUM?</h1> <br>
+		Ethereum é uma plataforma aberta (Open Source),
+		focada na criação e distribuição de smart contracts
+		e aplicações descentralizadas, usando a
+		tecnologia Blockchain. <br> 
+		Estas aplicações funcionam exatamente como
+		foram programadas, sem qualquer possibilidade
+		de alteração ou fraude e não necessitam de
+		intermediários, podendo interagir com sistemas
+		sociais, financeiros, interface de jogos e qualquer
+		outra coisa.
+	</div>
+	<img src="img2.png" alt="Ethereum Homestead Release Blockchain app platform" id="img2">
+	<div class="def dir">
+		<h1> O QUE É ETHER?</h1> <br>
+		ETH (Ether) é a moeda do sistema Ethereum. <br>
+		A função da moeda é servir como pagamento
+		para as operações e aplicações que rodam
+		dentro de sua rede. Isso garante que ninguém
+		trabalhe de graça, nem que recursos sejam
+		desperdiçados.
+	</div>
+	<img src="metamask.png" alt="Metamask icone" id="metamask">
+	<div class="def esq">
+		<h1> COMO CRIO MINHA CARTEIRA?</h1> <br>		
+		É importantíssimo salvar as 12 palavras que serão
+		apresentadas pelo Metamask pois <em>NÃO há como
+		recuperar sua carteira caso as perca. </em>
+		
+	</div>		
+		<ul id="tutorial">
+			<li> <a href="https://www.youtube.com/watch?v=uFCeyk83cw4&list=PLHvk_RIfgdqn64WWDcysoL61_1wTueg9v&index=2&t=0s" target="_blank"> TUTORIAL VÍDEO </a> </li>
+			<li> <a href="#"> TUTORIAL ESCRITO </a> </li>
+		</ul>		
+	<div class="def" id="num-3">
+		<h1> O QUE É UM SMART CONTRACT?</h1> <br>		
+		Smart Contracts são contratos 100% digitais e auto executáveis. São aplicativos desenvolvidos em uma plataforma de Blockchain (Ethereum), e serão executados exatamente como programados, <em> sem qualquer possibilidade de fraude ou modificação. </em> <br> 
+		O Ethereum permite que duas partes desconhecidas façam negócios com maior nível de confiança, sem a necessidade de um intermediário ou registro em cartório, evitando custos elevados e com maior agilidade.
+	</div>	
+
+	<div id="row">		
+		<div class="column">
+			<div class="card">
+				<img src="icon-1.svg" alt="mãos dadas em frente a um contrato assinado"  id="icon-1"> 					
+				<p> Termos e condições são programados em um contrato inteligente. </p>
+			</div>
 		</div>
-		<div class="diferenciais">
-			<p> <img src="check.svg" alt="ícone check" width="22"> <em>CRÉDITO FACILITADO PARA ADVOGADOS </em></p>
+		<div class="column">
+			<div class="card">
+				<img src="icon-22.svg" alt="mãos dadas em frente a um contrato assinada" id="icon-2">
+				<p>O contrato é executado automaticamente quando um evento desencadeador é atingido, como o preço combinado ou a data de expiração. </p>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="icon-3.svg" alt="mãos dadas em frente a um contrato assinada"id="icon-3"> 
+				<p> Outros computadores da rede estarão certificando e validando a legitimidade das informações do contrato. </p>
+			</div>
 		</div>
 	</div>
-	
+		
+
+
+	<h1 id="titulo2"> COMO COMPRAR?</h1> <br>
+	<div id="row2">		
+		<div class="column2">
+			<div class="card2">
+				<img src="icon-4.svg" id="icon-4" alt="mãos dadas em frente a um contrato assinado"> 
+				<p> 1. Crie sua carteira. </p>
+			</div>
+		</div>
+		<div class="column2">
+			<div class="card2">
+				<img src="icon-5.svg" id="icon-5" alt="mãos dadas em frente a um contrato assinada">
+				<p>2. Faça seu cadastro. </p>
+			</div>
+		</div>		
+		<div class="column2">
+			<div class="card2">
+				<img src="icon-6.svg" id="icon-6" alt="mãos dadas em frente a um contrato assinada"> 
+				<p> 3. Faça o Upload de documentos. </p>
+			</div>
+		</div>		
+		<div class="column2">
+			<div class="card2">
+				<img src="icon-7.svg" id="icon-7" alt="mãos dadas em frente a um contrato assinada"> 
+				<p> 4. Gere o boleto, efetue o pagamento e aguarde a compensação.  </p>
+			</div>
+		</div>
+		<div class="column2">
+			<div class="card2">
+				<img src="icon-8.svg" id="icon-8" alt="mãos dadas em frente a um contrato assinada"> 
+				<p> 5. Consulte seu saldo. </p>
+			</div>			
+		</div>
+	</div>
+
+	<h1 id="compre-aqui"> COMPRE AQUI!</h1> <br>
+    <form action="" id="bloco-form">
+        <div id="valor-eth">
+          1 ETH = 
+        </div>
+        <div id="valor">
+          <label for="valores"> Valor </label> 
+			<div  id="valores">
+				<input type="radio" Name="valor" id="v1" Value="0.25" onclick="getvalortotal()">
+				<label class="select" for="v1">0.25 ETH  </label>
+				
+				<input type="radio" Name="valor" id="v2" Value="0.5" onclick="getvalortotal()">
+				<label class="select" for="v2">0.5 ETH</label>
+
+				<input type="radio" Name="valor" id="v3" Value="0.75" onclick="getvalortotal()">
+				<label class="select" for="v3">0.75 ETH</label>
+				
+				<input type="radio" Name="valor" id="v4" Value="1" onclick="getvalortotal()">
+				<label class="select" for="v4">1 ETH</label>
+			</div>
+        </div>
+        <div class="taxa-subtotal">
+          <p class="desc">Subtotal </p> 
+          <p class="taxa">R$0,00 </p> 
+        </div>
+        <div class="taxa-subtotal">
+          <p class="desc">Taxa </p> 
+          <p class="taxa">R$50,00 </p> 
+        </div>
+        <div id="linha"></div>
+        <div class="taxa-subtotal total" id="totalPrice">
+          <p class="desc"><em>Total </p> 
+          <p class="taxa" > </em></p> 
+        </div>
+        <input type="button" class="item-form" value="Comprar" id="send" onClick="parent.location='compre-aqui-dados.html'">
+	</form>  
+	  
+
+    <h1 id="titulo2"> LOGIN</h1>
+    <form id="form-compra">        
+            <label for="email" class="desc login"> Email </label>
+            <input type="email" id="email" class="item-form" aria-label="email" placeholder="Email de Login" required>
+            <br>
+            <label  for="senha" class="desc login"> Senha </label>
+            <input type="password" id="senha" required class="item-form" aria-label="senha">
+            <br>
+            <input type="submit" value="Entrar" />
+    </form>
+</div>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
 
 <script>
@@ -69,6 +216,6 @@
         $("#sair").hide("fast", "linear");
       });
     });
-</script>
-  </body>
+	</script>
+</body>
 </html>
