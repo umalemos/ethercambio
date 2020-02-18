@@ -498,9 +498,9 @@ input[type=submit]:hover, input[type=button]:hover {
 	#row2 {text-align: center;}
 	#titulo2 {margin-top: 0;font-size: 40px; width:90%; padding-top: 0;}
 	#logar {top:155px; left: inherit;}
-	#form-compra {margin-top: 80px;width: 90%;}
+	#form-compra {margin-top: 80px;width: 75%;}
 	input[type=submit], input[type=button]{width: 50%;}
-	.item-form {width: 90%;}
+	.item-form {width: 95%;}
 	#valor {margin-bottom: 75px;}
 	#valores {position: absolute;text-align: end; width: 45%;}	
 	#bloco-form {width: 75%;}
